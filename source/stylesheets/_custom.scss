@@ -1,5 +1,31 @@
 // Your custom SCSS should be written here...
 
+/* colors **********************************************************/
+
+$primary_text_color: #332d2d; // text 
+$primary_red: #8c242a; // header
+$primary_bright_red: #C41300; // dropdown bkg
+$primary_brick_red: #8c242a; // box list disc
+
+$black: #000;
+$dark_blue: #4d627f; // pagehead border
+$light_grey: #e6e5e1; // header bkg
+$light_grey_one: #ddd; // contentMain bkg
+$medium_gray: #c8c7c3; // box border
+$medium_gray_two: #b4b4b3; // footer bkg 
+$white: #fff; // link
+
+$para_text_small: 0.8em; //11.381px 16px @ 1:1.618    
+
+body {
+  background: $light_grey;
+}
+
+.header {
+  background: $light_grey_one url("../images/head_image_home.png") 0 0 no-repeat;
+}
+
+/* nav class *******************************************************/
 .nav {
   display: table;
   vertical-align: middle;
@@ -15,10 +41,72 @@
       display: block;
       padding: 0 16px;
       white-sapce: nowrap;
-      text-shadow: 0 1px 2px #191a1b,
-                   0 1px 0 #191a1b;
       line-height: 58px;
       font-size: 1rem;
     }
   }
+}
+
+
+/* box class *******************************************************/
+
+.box {
+  background: $white;
+  border: 4px solid $medium_gray;
+  border-radius: 10px;
+  height: 480px;
+  padding: 20px 30px;
+}
+
+.box-list {
+  color: $primary_brick_red;
+  list-style: disc;
+  line-height: 20px;
+  padding-left: 20px;
+}
+
+
+.box-small {
+  height: 220px;
+}
+
+.box-small-short {
+  height: 160px;
+}
+
+.box-small-list {
+  padding-left: 20px;
+}
+
+
+.footer {
+  background-color: $medium_gray_two;
+  border-top: 1px solid $white;
+  height: 100px;
+  p {
+    font-size: $para_text_small;
+  }
+  a {
+    color: $white;
+  }
+}
+
+#contactInfo {
+  float: left;
+  width: 275px;
+  margin-right: 150px;
+}
+
+.highlight {
+  background-color: #e4e4e4;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+/* helper class ***************************************************/
+
+.contentMain-additional-padding {
+  padding: 24px 64px;
+}
+.form-additional-padding {
+  margin-top: 0.6rem;
 }

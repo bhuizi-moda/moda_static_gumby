@@ -5,7 +5,7 @@
   min-height: 60px;
   display: block;
   margin-bottom: 20px;
-  background: $navbar-color; // Change this color in settings to change the navbar color
+  background: transparent; // Change this color in settings to change the navbar color
   position: relative;
   @include respond(all-phones) {
     border: none;
@@ -128,9 +128,9 @@
       display: block;
       padding: 0 ms(0);
       white-space: nowrap;
-      color: $navbar-link-color;
-      text-shadow: 0 1px 2px darken($navbar-color, 20%),
-                   0 1px 0 darken($navbar-color, 20%);
+      color: $body-link-color;
+      // text-shadow: 0 1px 2px darken($navbar-color, 20%),
+      //              0 1px 0 darken($navbar-color, 20%);
       @include line-and-height(height-calc($larger - 3));
       @include font-size($norm);
       i.icon-popup {
